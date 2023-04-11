@@ -43,7 +43,7 @@ const questions = [{
     type: 'list',
     name: 'license',
     message: 'Choose which license.',
-    choices: ['MIT', 'ISC', 'GNUPLv3'],
+    choices: ['MIT', 'ISC', 'GNUAGPLv3', 'GNUGPLv2', 'GNULGPLv3', 'Apache', 'BSD2', 'BSD3', 'Boost', 'CC0', 'Eclipse', 'Mozilla', 'Unlicense'],
     filter(val) {
         return val.toLowerCase();
     }
