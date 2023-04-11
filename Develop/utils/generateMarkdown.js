@@ -56,7 +56,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
-    return `Licensed belong to the ${renderLicenseLink(license)} license`
+    return `Distributed under the ${renderLicenseLink(license)} license. See the link for more information.`
   } else {
     return '';
   }
@@ -77,9 +77,8 @@ ${data.description}
 - [Credits](#credits)
 - [Contributing](#contributing)
 - [Tests](#tests)
+- [Questions](#questions)
 - [License](#license)
-- [GitHub Profile](#github-profile)
-- [Email](#email)
 
 ## Installation
 ${data.installation}
@@ -96,14 +95,12 @@ ${data.contributing}
 ## Tests
 ${data.tests}
 
+## Questions
+* GitHub Profile https://github.com/ ${data.username}
+* Email ${data.email}
+
 ## License
 ${renderLicenseSection(data.license)}
-
-## GitHub Profile
-https://github.com/ ${data.username}
-  
-## Email
-${data.email}
 
  `;
 }
