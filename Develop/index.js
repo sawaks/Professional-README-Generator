@@ -47,14 +47,15 @@ const questions = [{
 
 },
 {
-    type: 'input',
+    type: 'editor',
     name: 'tests',
-    message: 'Go the extra mile and write tests for your application.',
+    message: 'Write tests for your application.',
+    default: '* \n* \n* \n* ',
 },
 {
     type: 'list',
     name: 'license',
-    message: 'Choose which license.',
+    message: 'Choose which license for this project.',
     choices: ['MIT', 'ISC', 'GNUAGPLv3', 'GNUGPLv2', 'GNULGPLv3', 'Apache', 'BSD2', 'BSD3', 'Boost', 'CC0', 'Eclipse', 'Mozilla', 'Unlicense'],
     filter(val) {
         return val.toLowerCase();

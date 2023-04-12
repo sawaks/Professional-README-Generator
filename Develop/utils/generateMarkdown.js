@@ -75,16 +75,6 @@ ${contents.map((item) => `- [${item}](#${item.toLowerCase().replace(/\s/g, '-')}
   }
 }
 
-// function renderInstallation(installation4) {
-
-//   if (installation4) {
-//     return `4. ${installation4}\n`;
-//   } else {
-//     return '';
-//   }
-
-// }
-
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) => {
   return `
