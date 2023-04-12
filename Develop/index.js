@@ -3,7 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const markdown = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
+
 const questions = [{
     type: 'input',
     name: 'title',
@@ -15,29 +15,41 @@ const questions = [{
     message: 'Write down the description of your project.',
 },
 {
-    type: 'input',
+    type: 'checkbox',
+    name: 'contents',
+    message: 'Choose which contents you use.',
+    choices: ['Installation', 'Usage', 'Credits', 'Contributing', 'Tests', 'Questions', 'License'],
+
+},
+{
+    type: 'editor',
     name: 'installation',
     message: 'What are the steps required to install your project? ',
+    default: '1. \n2. \n3. \n4. ',
 },
 {
-    type: 'input',
+    type: 'editor',
     name: 'usage',
-    message: 'Provide instructions and examples for use. Include screenshots as needed.'
+    message: 'Provide instructions and examples for use. Include screenshots as needed.',
+    default: '1. \n2. \n3. \n4. ',
 },
 {
-    type: 'input',
+    type: 'editor',
     name: 'credits',
-    message: 'Write down your collaborators, if any, with links to their GitHub profiles.'
+    message: 'Write down your collaborators, if any, with links to their GitHub profiles.',
+    default: '* \n* \n* \n* ',
 },
 {
-    type: 'input',
+    type: 'editor',
     name: 'contributing',
     message: 'what is the contribution info?',
+    default: '* \n* \n* \n* ',
+
 },
 {
     type: 'input',
     name: 'tests',
-    message: 'Go the extra mile and write tests for your application. Then provide examples on how to run them here.',
+    message: 'Go the extra mile and write tests for your application.',
 },
 {
     type: 'list',
