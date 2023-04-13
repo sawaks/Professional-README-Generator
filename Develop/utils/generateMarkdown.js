@@ -103,7 +103,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-* GitHub Profile https://github.com/ ${data.username}
+* GitHub Profile https://github.com/${data.username}
 * Email ${data.email}
 
 ## License

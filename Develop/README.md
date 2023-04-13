@@ -5,8 +5,6 @@
 ## Description
 This project is the proof that I learned through week 9. This application must use Inquirer package to create README.md file. The user can type answers for each prompt through a command-line application and it will be rendered on README.md file.
 
-the video about how to use README generator: 
-https://watch.screencastify.com/v/NXPUdjyLbBFw6N2KwPTF
 
 ## Table of Contents
 
@@ -68,7 +66,7 @@ This will launch the application and prompt you for the necessary input fields, 
 
 
 ## Questions
-* GitHub Profile https://github.com/ sawaks
+* GitHub Profile https://github.com/sawaks
 * Email sawakogoshima@gmail.com
 
 ## License
